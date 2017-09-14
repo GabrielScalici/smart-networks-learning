@@ -43,11 +43,23 @@ G = nx.Graph()
 
 for linhas in leitura_texto :
     no = linhas.split()
-    #print(no[0], no[1])
+    #Criando as arestas e os vertices se nao existirem
     G.add_edge(no[0], no[1])
 
-print(G.number_of_edges())
-print(G.number_of_nodes())
+arq.close()
+
+texto = G.number_of_edges()
+
+
+#
+# Abertura do arquivo de saida com os resultados
+#
+
+#var_resultados = 'resultados' + op + '.txt'
+
+arq = open('resultados.txt', 'w')
+
+arq.write('Ola')
 
 
 arq.close()
