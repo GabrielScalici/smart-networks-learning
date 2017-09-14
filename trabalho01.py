@@ -48,18 +48,19 @@ for linhas in leitura_texto :
 
 arq.close()
 
-texto = G.number_of_edges()
-
+numero_arestas = G.number_of_edges()
+numero_vertices = G.number_of_nodes()
 
 #
 # Abertura do arquivo de saida com os resultados
 #
 
+#Arquivo de saida diferente para cada rede analisada
 var_resultados = 'resultados' + str(op_rede) + '.txt'
 
 arq = open(var_resultados, 'w')
 
-arq.write('Ola')
-
+arq.write('Numero de arestas : ' + str(numero_arestas) + '\n')
+arq.write('Numero de vertices : ' + str(numero_vertices))
 
 arq.close()

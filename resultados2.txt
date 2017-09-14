@@ -1,0 +1,2 @@
+Numero de arestas : 1417
+Numero de vertices : 1174
