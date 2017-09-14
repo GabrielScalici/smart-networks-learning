@@ -46,4 +46,8 @@ for linhas in leitura_texto :
     #print(no[0], no[1])
     G.add_edge(no[0], no[1])
 
+print(G.number_of_edges())
+print(G.number_of_nodes())
+
+
 arq.close()
