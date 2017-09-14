@@ -19,15 +19,15 @@ var_power = 'powergrid.txt'
 print('Selecione a rede desejada:')
 print('1 - USairports \n2 - euroroad \n3 - hamster \n4 - powergrid')
 
-op = input()
+op_rede = input()
 
-if op == 1:
+if op_rede == 1:
     arquivo = 'USairports.txt'
-elif op == 2:
+elif op_rede == 2:
     arquivo = 'euroroad.txt'
-elif op == 3:
+elif op_rede == 3:
     arquivo = 'hamster.txt'
-elif op == 4:
+elif op_rede == 4:
     arquivo = 'powergrid.txt'
 
 #
@@ -55,9 +55,9 @@ texto = G.number_of_edges()
 # Abertura do arquivo de saida com os resultados
 #
 
-#var_resultados = 'resultados' + op + '.txt'
+var_resultados = 'resultados' + str(op_rede) + '.txt'
 
-arq = open('resultados.txt', 'w')
+arq = open(var_resultados, 'w')
 
 arq.write('Ola')
 
