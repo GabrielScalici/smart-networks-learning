@@ -6,6 +6,7 @@
 #
 
 import networkx as nx
+#import matplotlib.pyplot as plt
 
 #
 #   Menu para falicitar a escolha de redes
@@ -33,7 +34,6 @@ elif op_rede == 4:
 #
 # Abertura do arquivo/ selecao das colunas necessarias / Criacao Grafo
 #
-#
 
 arq = open( arquivo , 'r')
 
@@ -48,8 +48,81 @@ for linhas in leitura_texto :
 
 arq.close()
 
-numero_arestas = G.number_of_edges()
+#
+# Inicio das funcoes que devem ser implementadas
+#
+
+
+#
+# (3) Extraindo o Maior componente da Rede
+#
+
+
+#
+# (4) Distribuicao dos graus da rede/ Qual eh sem escala/ Estimativa da lei de potencia
+#
+
+
+#
+# (5) Medida das propriedade das redes (Montar Tabela)
+#
+
+#Numero de Vertices
 numero_vertices = G.number_of_nodes()
+
+#Grau Medio
+
+#Segundo momento da distribuicao do Grau
+
+#Media dos coeficientes de aglomeracao local
+
+#Coeficiente de aglomeracao pela forma da transitividade
+
+#Media dos menores Caminhos
+
+#Diametro
+
+
+#
+# (6) Histograma para rede
+#
+
+#Distribuicao acumulada dos coeficientes de aglomeracao local
+
+#Distribuicao dos menores caminhos
+
+
+#
+# (7) Entropia de Shannon para redes reais
+#
+
+# Betweenness centrality
+betweenness_centrality(G, nodes)
+
+# Closenness Centrality
+
+# Eigenvector centrality
+
+# PageRank
+
+
+#
+# (8) Coeficiente de Parson
+#
+
+
+
+#
+# Plotar o grafo, apenas para visualizacao
+#
+
+#plt.figure(1, figsize=(12, 8))
+#pos=nx.fruchterman_reingold_layout(G)
+#plt.axis('off')
+#nx.draw_networkx_nodes(G,pos,node_size=50)
+#nx.draw_networkx_edges(G,pos,alpha=0.4)
+#plt.title('Func', size=16)
+#plt.show()
 
 #
 # Abertura do arquivo de saida com os resultados
