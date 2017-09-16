@@ -71,6 +71,7 @@ arq.close()
 numero_vertices = G.number_of_nodes()
 
 #Grau Medio
+#grau_medio = average_degree_connectivity(G, source='in', target='out')
 
 #Segundo momento da distribuicao do Grau
 
@@ -97,7 +98,7 @@ numero_vertices = G.number_of_nodes()
 #
 
 # Betweenness centrality
-betweenness_centrality(G, nodes)
+#bet_centrality = nx.betweenness_centrality(G)
 
 # Closenness Centrality
 
@@ -133,7 +134,7 @@ var_resultados = 'resultados' + str(op_rede) + '.txt'
 
 arq = open(var_resultados, 'w')
 
-arq.write('Numero de arestas : ' + str(numero_arestas) + '\n')
+#arq.write('Centrality : ' + str(bet_centrality) + '\n')
 arq.write('Numero de vertices : ' + str(numero_vertices))
 
 arq.close()
