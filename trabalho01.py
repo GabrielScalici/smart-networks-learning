@@ -6,6 +6,7 @@
 #
 
 import networkx as nx
+import powerlaw as pw
 #import matplotlib.pyplot as plt
 
 #
