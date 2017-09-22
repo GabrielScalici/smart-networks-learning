@@ -73,8 +73,16 @@ numero_vertices = G.number_of_nodes()
 numero_arestas = G.number_of_edges()
 
 #Grau Medio
-from networkx.algorithms import approximation as imp
-grau_medio = imp.node_connectivity(G)
+#from networkx.algorithms import approximation as aproxx
+histograma_graus = nx.degree_histogram(G)
+i = 0
+total_histograma = 0
+for i in histograma_graus:
+    total_histograma += histograma_graus[i]
+
+grau_medio = total_histograma
+
+
 
 #Segundo momento da distribuicao do Grau
 
