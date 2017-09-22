@@ -6,7 +6,7 @@
 #
 
 import networkx as nx
-import powerlaw as pw
+import powerlaw as pl
 #import matplotlib.pyplot as plt
 
 #
@@ -70,9 +70,11 @@ arq.close()
 
 #Numero de Vertices
 numero_vertices = G.number_of_nodes()
+numero_arestas = G.number_of_edges()
 
 #Grau Medio
-#grau_medio = average_degree_connectivity(G, source='in', target='out')
+from networkx.algorithms import approximation as imp
+grau_medio = imp.node_connectivity(G)
 
 #Segundo momento da distribuicao do Grau
 
@@ -135,7 +137,7 @@ var_resultados = 'resultados' + str(op_rede) + '.txt'
 
 arq = open(var_resultados, 'w')
 
-#arq.write('Centrality : ' + str(bet_centrality) + '\n')
+arq.write('Connectivity : ' + str(grau_medio) + '\n')
 arq.write('Numero de vertices : ' + str(numero_vertices))
 
 arq.close()

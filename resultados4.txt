@@ -1,2 +1,2 @@
-Numero de arestas : 6594
+Connectivity : 1
 Numero de vertices : 4941

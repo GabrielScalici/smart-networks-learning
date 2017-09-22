@@ -1,1 +1,2 @@
+Connectivity : 0
 Numero de vertices : 1574
